@@ -1,0 +1,31 @@
+---
+apiVersion: apps/v1
+kind: StatefulSet
+
+metadata:
+  labels:
+    service: "test-bridge-k8s-webservice"
+  name: "test-bridge-k8s-webservice"
+spec:
+  serviceName: "test-bridge-k8s-webservice"
+  replicas: 1
+  selector:
+    matchLabels:
+      service: "test-bridge-k8s-webservice"
+  template:
+    metadata:
+      labels:
+        service: "test-bridge-k8s-webservice"
+        tier: backend
+    spec:
+      containers:
+        - image: "stevekieu/test-bridge-k8s:statefulset"
+          name: "test-bridge-k8s-webservice"
+          ports:
+            - containerPort: 8080
+              name: http-port
+              protocol: TCP
+          resources:
+            requests:
+              memory: 32Mi
+              cpu: 20m
