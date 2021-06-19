@@ -29,30 +29,3 @@ spec:
             requests:
               memory: 32Mi
               #cpu: 20m
-          readinessProbe:
-            failureThreshold: 2
-            httpGet:
-              path: /
-              port: 8080
-              scheme: HTTP
-            periodSeconds: 30
-            successThreshold: 1
-            timeoutSeconds: 30
-          livenessProbe:
-            failureThreshold: 3
-            httpGet:
-              path: /
-              port: 8080
-              scheme: HTTP
-            periodSeconds: 30
-            successThreshold: 1
-            timeoutSeconds: 30
-          startupProbe:
-            failureThreshold: 30
-            httpGet:
-              path: /
-              port: 8080
-              scheme: HTTP
-            periodSeconds: 10
-            successThreshold: 1
-            timeoutSeconds: 1
