@@ -1,0 +1,18 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "bridge-to-kubernetes.resource",
+			"type": "bridge-to-kubernetes.resource",
+			"resource": "test-bridge-k8s-webservice",
+			"resourceType": "service",
+			"ports": [
+				8080
+			],
+			"targetCluster": "qa",
+			"targetNamespace": "stevek-play-k8sbridge",
+			"useKubernetesServiceEnvironmentVariables": false,
+			"isolateAs": "stevek-357c"
+		}
+	]
+}
