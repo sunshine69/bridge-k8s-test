@@ -14,10 +14,10 @@ metadata:
 spec:
   tls:
     - hosts:
-        - "test-bridge-k8s.go1.cloud"
-      secretName: wildcard-go1-cloud-tls
+        - "test-bridge-k8s-52-147-15-249.nip.io"
+      # secretName: wildcard-go1-cloud-tls
   rules:
-  - host: test-bridge-k8s.go1.cloud
+  - host: test-bridge-k8s-52-147-15-249.nip.io
     http:
       paths:
       - path: "/"
