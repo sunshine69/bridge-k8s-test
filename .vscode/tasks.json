@@ -12,7 +12,7 @@
 			"targetCluster": "qa",
 			"targetNamespace": "stevek-play-k8sbridge",
 			"useKubernetesServiceEnvironmentVariables": false,
-			"isolateAs": "stevek-357c"
+			"isolateAs": "stevek-3d2c"
 		}
 	]
 }
