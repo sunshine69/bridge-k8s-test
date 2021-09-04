@@ -8,16 +8,16 @@ metadata:
     service: "test-bridge-k8s" # ${PROJECT_NAME}
   name: "test-bridge-k8s"
   annotations:
-    kubernetes.io/ingress.class: nginx
+    kubernetes.io/ingress.class: qa-shared-nginx
     nginx.ingress.kubernetes.io/ssl-redirect: "true"
 
 spec:
   tls:
     - hosts:
-        - "test-bridge-k8s-52-147-15-249.nip.io"
+        - "test-bridge-k8s-20-53-124-141.nip.io"
       # secretName: wildcard-go1-cloud-tls
   rules:
-  - host: test-bridge-k8s-52-147-15-249.nip.io
+  - host: test-bridge-k8s-20-53-124-141.nip.io
     http:
       paths:
       - path: "/"
