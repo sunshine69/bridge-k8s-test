@@ -10,9 +10,9 @@
 				8080
 			],
 			"targetCluster": "qa",
-			"targetNamespace": "stevek-play-k8sbridge",
+			"targetNamespace": "stevek-play-with-k8sbridge",
 			"useKubernetesServiceEnvironmentVariables": false,
-			"isolateAs": "stevek-3d2c"
+			"isolateAs": "stevek-bf27"
 		}
 	]
 }

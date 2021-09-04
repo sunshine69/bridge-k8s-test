@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: test-bridge-k8s-webservice
+  labels:
+  annotations:
+data:
+  SHARED_TOKEN: "changeme"
+  #SERVER_DOMAIN:
+  SERVER_PORT: "8080"
+  #SSL_KEY:
+  #SSL_CERT:
+  DB_PATH: "sample-db.sqlite3"
