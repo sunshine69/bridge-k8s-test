@@ -1,4 +1,11 @@
+# Outdated instruction
+
+I have arranged the dirs a bit so these info below just for information purposes only, I have not had time to update it yet.
+
+
 # bridge-k8s-test
+
+
 Trying to prototype test and see if it works
 
 To repeat the test change the host `test-bridge-k8s-52-147-15-249.nip.io` in the ingress yaml file to match with your external IP of your ingress controller (replace the `52-147-15-249` with yours) . Then you can start the test.
